@@ -1,6 +1,9 @@
-body{
+*{
   margin: 0;
   padding: 0;
+}
+
+body{
   font-family: Fira Sans, sans-serif;
   font-weight: 400;
   word-wrap: break-word;
@@ -11,12 +14,38 @@ body{
   color: #fff;
   font-weight: 700;
   text-align: left;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  width: 50%;
+  margin: 2vh 0;
 }
 
 .section-title{
   text-align: left;
   font-weight: 400;
+  padding-top: 12vh;
+}
+
+.section-title::before{
+  display: inline-block;
+  position: absolute;
+  top: 13.2vh;
+  left: -5px;;
+  content: "";
+  background-color: #11b5ff;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.section-title::after{
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: rgba(17, 181, 255, 0.2);;
+  width: 1px;
+  height: 93%;
+  left: -2px;
+  top: 16vh;
 }
 
 .plan-desc__title{
@@ -33,7 +62,7 @@ body{
 }
 
 .btn{
-  padding: 6px 12px;
+  padding: 7px 12px;
   font-size: 0.75em;
   font-weight: 700;
   white-space: nowrap;
@@ -49,13 +78,17 @@ body{
   font: inherit;
 }
 
-.btn-primary{
+.btn:focus{
+  outline-style: none;
+}
+
+.btn_primary{
   color: #fff;
   background-color: #11b5ff;
   border: none;
 }
 
-.btn-primary:hover{
+.btn_primary:hover{
   background-color: #1b8fe0;
 }
 
@@ -63,6 +96,10 @@ body{
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+}
+
+.pos{
+  margin: 0 30px;
 }
 
 /*Header*/
@@ -113,11 +150,73 @@ body{
   margin-right: 10px;
   padding: 10px;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   background-color: #11b5ff;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contact-description{
+  font-size: 0.875rem;
+}
+
+.header-main{
+  background-image: url(./img/header_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+}
+
+.header-text{
+  font-size: 1.075rem;
+  width: 40%;
+  color: #fff;
+}
+
+.header-text_blue{
+  padding-top: 15vh;
+  color: #11b5ff;
+}
+
+.our-base-text{
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #11b5ff;
+}
+
+.our-base-info{
+  display: grid;
+  grid-template-columns: 0.08fr 0.08fr 0.8fr;
+  margin-bottom: 20px;
+}
+
+.our-base-items__numbers{
+  color: #fff;
+  font-size: 1.8rem;
+  padding-top: 10px;
+  margin-bottom: 3px;
+}
+
+.our-base-items__description{
+  color: #bbbcbf;
+  font-size: 0.75rem;
+}
+
+.small-sup{
+  padding-top: 5px;
+}
+
+.btn_header{
+  margin-top: 10px;
+  margin-bottom: 15vh;
+  width: 10%;
+}
+
+/*Our team section*/
+.team-section{
+  background-color: #f2f8ff;
 }
