@@ -37,15 +37,30 @@ body{
   border-radius: 50%;
 }
 
-.section-title::after{
+.vl{
   display: block;
   position: absolute;
   content: "";
   background-color: rgba(17, 181, 255, 0.2);
   width: 1px;
-  height: 93%;
   left: -2px;
   top: 16vh;
+}
+
+.vl_team{
+  height: 92%;
+}
+
+.vl_work{
+  height: 97%;
+}
+
+.vl_hww{
+  height: 100%;
+}
+
+.vl_bank{
+  height: 91%;
 }
 
 .plan-desc__title{
@@ -380,4 +395,82 @@ body{
   position: absolute;
   bottom: -30px;
   right: 400px;
+}
+
+/*Bank section*/
+.bank-section{
+  background-color: #f2f8ff;
+}
+
+.bank-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.bank-list__item{
+  padding: 10px;
+}
+
+.btn_bs{
+  margin-bottom: 60px;
+}
+
+/*Review section*/
+.review-group{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 0;
+}
+
+.review{
+  padding-right: 20px;
+  font-size: 0.875rem;
+  color: #bbbcbf;
+}
+
+.review-img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.review-user{
+  display: flex;
+}
+
+.review-user__name{
+  color: #11b5ff;
+}
+
+.review-title{
+  font-size: 0.875rem;
+  width: 70%;
+}
+
+.review-text{
+  width: 70%;
+}
+
+.banner_review{
+  background-image: url(./img/banner_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-position-x: 0;
+  padding: 7vw;
+  margin-bottom: 5vw;
+  margin-top: 2vw;
+}
+
+.banner__text{
+  color: #909090;
+  font-size: 0.875rem;
+  width: 35%;
+  margin-bottom: 20px;
 }
