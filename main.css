@@ -474,3 +474,50 @@ body{
   width: 35%;
   margin-bottom: 20px;
 }
+
+/*footer*/
+.contact-section{
+  position: relative;
+}
+
+.contact-block{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  top: 5vw;
+  left: 20%;
+}
+
+.logo_footer{
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(17, 181, 255, 0.2);
+  width: 80%;
+}
+
+.contact-info{
+  padding: 20px 0;
+}
+
+.company-contact_footer{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.contact-icon_footer{
+  margin-bottom: 10px;
+}
+
+.company-contact__name{
+  color: #11b5ff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.company-contact__num{
+  font-weight: 600;
+}
