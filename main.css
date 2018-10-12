@@ -446,6 +446,7 @@ body{
 
 .review-user__name{
   color: #11b5ff;
+  margin-right: 5px;
 }
 
 .review-title{
@@ -463,7 +464,7 @@ body{
   background-position: center;
   background-size: contain;
   background-position-x: 0;
-  padding: 7vw;
+  padding: 5vw;
   margin-bottom: 5vw;
   margin-top: 2vw;
 }
@@ -489,6 +490,8 @@ body{
   align-items: center;
   top: 5vw;
   left: 20%;
+  box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 .logo_footer{
@@ -520,4 +523,138 @@ body{
 
 .company-contact__num{
   font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px){
+  .container{
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .container{
+    max-width: 600px;
+  }
+
+  .logo{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+  }
+
+  .logo__img{
+    margin: 0;
+  }
+
+  .logo__text{
+    border-left: none;
+  }
+
+  .nav-info{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 70px;
+    width: 60%;
+    padding: 10px 0;
+  }
+
+  .company-contact{
+    margin: 5px 0;
+  }
+
+  .header-text{
+    width: 100%;
+  }
+
+  .header-title{
+    width: 100%;
+  }
+
+  .our-base-info{
+    grid-template-columns: 0.15fr 0.15fr 0.3fr;
+  }
+
+  .btn_header{
+    width: 30%;
+    margin-top: 20px;
+  }
+
+  .team-pos{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.7fr;
+    padding: 0;
+  }
+
+  .team-image{
+    padding-top: 20px;
+    margin: 0;
+    align-items: flex-start;
+  }
+
+  .work-items{
+    display: grid;
+    grid-template-rows: 0.8fr 1fr;
+    margin-bottom: 10px;
+  }
+
+  .plan-item{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .plan-item_left{
+    grid-row-start: 1;
+    margin-left: 0;
+  }
+
+  .hashtags{
+    width: 100%;
+  }
+
+  .plan-desc{
+    width: 100%;
+  }
+
+  .banner__title{
+    width: 100%;
+    font-size: 1.25rem;
+  }
+
+  .hww-img{
+    z-index: -10;
+    right: 0;
+  }
+
+  .bank-list{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .review-group{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+    padding-top: 20px;
+  }
+
+  .review-title{
+    text-align: center;
+  }
+
+  .banner__text{
+    width: 80%;
+  }
+
+  .logo_footer{
+    flex-direction: row;
+    width: 80%;
+  }
 }
