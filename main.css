@@ -658,3 +658,93 @@ body{
     width: 80%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .container{
+    max-width: 500px;
+  }
+
+  .btn{
+    font-size: 0.7rem;
+    border-radius: 1.5em;
+  }
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo{
+    flex-direction: row;
+    width: 60%;
+  }
+
+  .nav-info{
+    margin-left: 0;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .company-contact{
+    padding-right: 10px;
+  }
+
+  .contact-description{
+    font-size: 0.7rem;
+  }
+
+  .container_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-title{
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .header-our-base{
+    margin: 20px 0;
+  }
+
+  .our-base-info{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-title::before{
+    display: none;
+  }
+
+  .section-title{
+    text-align: center;
+    width: 100%;
+  }
+
+  .vl{
+    display: none;
+  }
+
+  .description-positions{
+    justify-content: center;
+  }
+
+  .team-desc{
+    margin: 0;
+    text-align: center;
+  }
+
+  .team-desc__text{
+    width: 100%;
+  }
+
+  .team-image{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
