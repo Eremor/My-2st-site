@@ -352,7 +352,7 @@ body{
 
 .hww-item{
   display: flex;
-  margin-bottom: 4vh;
+  margin-bottom: 40px;
   align-items: center;
 }
 
@@ -818,5 +818,29 @@ body{
     position: relative;
     top: 0;
     left: 0;
+  }
+}
+
+@media only screen and (max-height: 820px){
+  .vl{
+    top: 17vh;
+  }
+}
+
+@media only screen and (max-height: 400px){
+  .vl{
+    top: 18vh;
+  }
+}
+
+@media only screen and (max-height: 260px){
+  .vl{
+    top: 20vh;
+  }
+}
+
+@media only screen and (max-height: 160px){
+  .vl{
+    top: 25vh;
   }
 }
