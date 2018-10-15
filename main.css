@@ -563,6 +563,11 @@ body{
     margin: 5px 0;
   }
 
+  .contact-icon{
+    width: 10px;
+    height: 10px;
+  }
+
   .header-text{
     width: 100%;
   }
@@ -770,8 +775,6 @@ body{
   .contact-icon{
     margin-right: 0;
     margin-bottom: 10px;
-    width: 10px;
-    height: 10px;
   }
 
   .plan-item{
@@ -803,7 +806,7 @@ body{
   }
 
   .banner_review{
-    background-size: 100%;
+    background-size: 90%;
     width: 100%;
   }
 
@@ -818,6 +821,38 @@ body{
     position: relative;
     top: 0;
     left: 0;
+    box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .container{
+    margin: 0;
+  }
+
+  .pos{
+    margin: 0;
+    padding: 0 30px;
+  }
+
+  .bank-list{
+    width: 80%;
+  }
+
+  .bank-list__item{
+    width: 90%;
+  }
+
+  .hww-item::after{
+    margin-top: 35px;
+  }
+
+  .hww-item__text{
+    font-size: 0.75rem;
+  }
+
+  .hww-img{
+    display: none;
   }
 }
 
