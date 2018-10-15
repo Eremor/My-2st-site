@@ -757,6 +757,16 @@ body{
 @media only screen and (max-width: 460px) {
   .container{
     max-width: 350px;
+    margin: 0;
+  }
+
+  .our-base-items__numbers{
+    font-size: 1.25rem;
+  }
+
+  .pos{
+    margin: 0;
+    padding: 0 30px;
   }
 
   .logo{
@@ -828,11 +838,16 @@ body{
 @media only screen and (max-width: 370px){
   .container{
     margin: 0;
+    max-width: 100%;
+  }
+
+  .our-base-items__numbers{
+    font-size: 1.125rem;
   }
 
   .pos{
     margin: 0;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   .bank-list{
@@ -853,6 +868,10 @@ body{
 
   .hww-img{
     display: none;
+  }
+
+  .banner_review{
+    width: 90%;
   }
 
   .contact-block{
