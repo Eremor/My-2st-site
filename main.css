@@ -854,6 +854,10 @@ body{
   .hww-img{
     display: none;
   }
+
+  .contact-block{
+    box-shadow: none;
+  }
 }
 
 @media only screen and (max-height: 820px){
